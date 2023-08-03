@@ -50,11 +50,13 @@
           <p class="program-selection__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program-selection__form program-selection-form" action="https://echo.htmlacademy.ru/" method="POST">
 
-            <fieldset class="program-selection-form__section">
+            <fieldset class="program-selection-form__section program-selection-form__section--data">
               <legend class="visually-hidden">Информация о коте</legend>
 
-              <label class="program-selection-form__label" for="cat-name">ИМЯ:<sup>*</sup> </label>
-              <input class="program-selection-form__text-input" id="cat-name" required type="text" name="first-name" placeholder="Барсик">
+              <div class="program-selection-form__section-group-item">
+                <label class="program-selection-form__label" for="cat-name">ИМЯ:<sup>*</sup> </label>
+                <input class="program-selection-form__text-input" id="cat-name" required type="text" name="first-name" placeholder="Барсик">
+              </div>
 
               <label class="program-selection-form__label" for="cat-weight">Вес (кг):<sup>*</sup> </label>
               <input class="program-selection-form__text-input" id="cat-weight" required type="number" name="weight" placeholder="7" min="0" max="100">
@@ -79,8 +81,12 @@
             <fieldset class="program-selection-form__section program-selection-form__section--accent">
               <legend class="program-selection-form__section-legend">Контактные данные (владельца кота)</legend>
 
-              <label class="program-selection-form__label" for="master-email">E-mail:<sup>*</sup> </label>
-              <input class="program-selection-form__text-input program-selection-form__text-input--email" id="master-email" required type="email" name="email" placeholder="mail@mail.ru">
+              <div class="program-selection-form__section-group-item">
+                <label class="program-selection-form__label" for="master-email">E-mail:<sup>*</sup> </label>
+                <spn class="program-selection-form__text-input-wrapper program-selection-form__text-input-wrapper--email">
+                  <input class="program-selection-form__text-input program-selection-form__text-input--email" id="master-email" required type="email" name="email" placeholder="mail@mail.ru">
+                </spn>
+              </div>
 
               <label class="program-selection-form__label" for="master-phone">Телефон:<sup>*</sup> </label>
               <input class="program-selection-form__text-input program-selection-form__text-input--phone" id="master-phone" required type="tel" name="phone" placeholder="8 (800) 555-35-35" maxlength="21">
