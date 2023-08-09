@@ -1,0 +1,25 @@
+.program-link {
+  text-decoration: none;
+  display: block;
+  width: 240px;
+  color: $base-text-color;
+  font-family: Oswald, Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-top: 1px solid #D9D9D9;
+
+  &::after {
+    content: " ";
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    background-image: url("../img/svg/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+}

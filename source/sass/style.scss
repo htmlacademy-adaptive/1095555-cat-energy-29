@@ -1,1 +1,34 @@
-// Начните писать стили здесь
+@import "./general/fonts.scss";
+@import "./general/page.scss";
+@import "./general/visually-hidden.scss";
+@import "./general/button.scss";
+@import "./general/list-reset.scss";
+
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/program.scss";
+@import "./blocks/program-link.scss";
+@import "./blocks/how-it-work.scss";
+@import "./blocks/alive-example.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/before-after-slider.scss";
+@import "./blocks/location.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/footer-logo.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/selection-form.scss";
+@import "./blocks/control.scss";
+@import "./blocks/send-section.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/main-product-list.scss";
+@import "./blocks/product-desc-list.scss";
+@import "./blocks/show-more-product-card.scss";
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional-product-list.scss";
+@import "./blocks/promotion.scss";
