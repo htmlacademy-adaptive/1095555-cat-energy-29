@@ -25,7 +25,7 @@
 .show-more-product-card__title {
   margin: 0;
   padding: 23px 0 0 0;
-  color: #111111;
+  color: $show-more-card-title-color;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -38,7 +38,7 @@
   padding: 0;
   color: $secondary-text-color;
   text-align: center;
-  font-family: Lato, Roboto, sans-serif;
+  font-family: $ff-Lato;
   font-size: 12px;
   line-height: 16px;
 }

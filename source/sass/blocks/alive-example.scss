@@ -23,7 +23,7 @@
   padding: 0;
 
   color: $base-text-color;
-  font-family: Oswald, Roboto, sans-serif;
+  font-family: $ff-Oswald;
   font-size: 36px;
   line-height: 40px;
 }
@@ -33,7 +33,7 @@
   padding: 0;
 
   color: $secondary-text-color;
-  font-family: Lato, Roboto, sans-serif;
+  font-family: $ff-Lato;
   font-size: 14px;
   line-height: 18px;
 }

@@ -31,11 +31,11 @@
   width: 140px;
   color: $base-text-color;
   text-align: left;
-  font-family: Oswald, Roboto, sans-serif;
+  font-family: $ff-Oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -46,11 +46,11 @@
   width: 140px;
   color: $secondary-text-color;
   text-align: left;
-  font-family: Lato, Roboto, sans-serif;
+  font-family: $ff-Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
 }
 
 .location__map {

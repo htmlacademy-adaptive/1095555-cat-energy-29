@@ -7,7 +7,7 @@
   min-width: 320px;
   height: 66px;
   background-color: $base-background-color;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $site-list-border-color;
 }
 
 .site-list__link {
@@ -19,7 +19,7 @@
   text-decoration: none;
 
   color: $base-text-color;
-  font-family: Oswald, Roboto, sans-serif;
+  font-family: $ff-Oswald;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

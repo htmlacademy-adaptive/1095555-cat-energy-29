@@ -3,16 +3,16 @@
 }
 
 .additional-product-list__item {
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid $stats-border-color;
   padding: 13px 0 19px 0;
 
   &:last-child {
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid $stats-border-color;
   }
 }
 
 .additional-product-list__item-title {
-  color: #222222;
+  color: $product-list-item-header-color;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -22,7 +22,7 @@
 
 .additional-product-list__item-desc-key {
   color: $secondary-text-color;
-  font-family: Lato, Roboto, sans-serif;
+  font-family: $ff-Lato;
   font-size: 14px;
   line-height: 14px;
   margin: 13px 0 0 0;

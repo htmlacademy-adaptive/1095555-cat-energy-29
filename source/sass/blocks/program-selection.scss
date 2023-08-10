@@ -1,10 +1,10 @@
 .program-selection {
   width: 100%;
   background-color: $base-background-color;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid $section-border-color;
 
   color: $base-text-color;
-  font-family: Oswald, Roboto, sans-serif;
+  font-family: $ff-Oswald;
   font-style: normal;
   font-weight: 400;
 }
