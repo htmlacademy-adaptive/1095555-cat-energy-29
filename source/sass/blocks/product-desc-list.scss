@@ -1,1 +1,20 @@
+.product-desc-list {
 
+}
+
+.product-desc-list__item {
+
+}
+
+.product-desc-list__item-text {
+  padding: 0;
+  margin: 0;
+  color: $secondary-text-color;
+  font-family: Lato, Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

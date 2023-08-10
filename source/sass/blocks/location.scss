@@ -3,16 +3,25 @@
   padding: 0;
   width: 100%;
   position: relative;
+  background-color: $secondary-background-color;
+
+  &--home {
+    background-color: $base-background-color;
+  }
 }
 
 .location__wrapper {
   width: 280px;
   padding: 26px 20px;
   margin: auto;
-  background-color: $base-background-color;
+  background-color: $secondary-background-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--home {
+    background-color: $base-background-color;
+  }
 }
 
 .location__slogan {

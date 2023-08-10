@@ -1,1 +1,37 @@
+.promotion {
+  background-image: url("../img/catalog/promotion-mob@1x.jpeg");
+  width: 280px;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &:before {
+    content: " ";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/svg/gift-icon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.promotion__desc {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 161px;
+
+  color: $alternative-text-color;
+  text-align: center;
+  font-family: Lato, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -18,32 +18,34 @@
           <div class="main-header__nav">
             <nav class="main-nav">
 
-              <a class="main-header__logo" href="index.html">
-                <picture>
-                  <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-                </picture>
-              </a>
-
-              <div class="main-header__text-logo">
-                <a class="header-text-logo" href="index.html">
+             <div class="main-nav__picture-wrapper">
+                <a class="main-nav__logo" href="index.html">
                   <picture>
-                    <img src="img/svg/footer-logo.svg" width="101" height="18" alt="CAT ENERGY">
+                    <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
                   </picture>
                 </a>
+
+                <div class="main-nav__text-logo">
+                  <a class="header-text-logo" href="index.html">
+                    <picture>
+                      <img src="img/svg/footer-logo.svg" width="101" height="18" alt="CAT ENERGY">
+                    </picture>
+                  </a>
+                </div>
+
+                <button class="main-nav__toogle" type="button" aria-label="Открыть/закрыть меню"></button>
               </div>
 
-              <button class="main-nav__toogle" type="button" aria-label="Открыть/закрыть меню"></button>
-
-              <div class="main-nav__wrapper">
+              <div class="main-nav__site-list-wrapper">
                 <ul class="main-nav__list site-list list-reset">
-                  <li class="site-list__item">
-                    <a class="site-list__link" href="index.html">Главная</a>
+                  <li class="site-list__item site-list__item--current">
+                    <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
                   </li>
                   <li class="site-list__item">
                     <a class="site-list__link" href="catalog.html">Каталог продукции</a>
                   </li>
-                  <li class="site-list__item site-list__item--current">
-                    <a class="site-list__link" href="form.html" aria-current="page">Подбор программы</a>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Подбор программы</a>
                   </li>
                 </ul>
               </div>
@@ -62,23 +64,25 @@
             <p class="program-selection__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru/" method="POST">
 
-              <fieldset class="selection-form__section selection-form__section--data">
-                <legend class="visually-hidden">Информация о коте</legend>
+              <div class="selection-form__dop-wrapper">
+                <fieldset class="selection-form__section selection-form__section--data">
+                  <legend class="visually-hidden">Информация о коте</legend>
 
-                <div class="selection-form__section-group-item">
-                  <label class="selection-form__label" for="cat-name">ИМЯ:<sup>*</sup> </label>
-                  <input class="selection-form__text-input" id="cat-name" required type="text" name="first-name" placeholder="Барсик">
-                </div>
+                  <div class="selection-form__section-group-item">
+                    <label class="selection-form__label" for="cat-name">ИМЯ:<sup>*</sup></label>
+                    <input class="selection-form__text-input" id="cat-name" required type="text" name="first-name" placeholder="Барсик">
+                  </div>
 
-                <div class="selection-form__section-group-item">
-                  <label class="selection-form__label" for="cat-weight">Вес (кг):<sup>*</sup> </label>
-                  <input class="selection-form__text-input" id="cat-weight" required type="number" name="weight" placeholder="7" min="0" max="100">
-                </div>
+                  <div class="selection-form__section-group-item">
+                    <label class="selection-form__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+                    <input class="selection-form__text-input" id="cat-weight" required type="number" name="weight" placeholder="7" min="0" max="100">
+                  </div>
 
-                <div class="selection-form__section-group-item">
-                  <label class="selection-form__label" for="cat-age">Возраст (лет): </label>
-                  <input class="selection-form__text-input" id="cat-age" type="number" name="age" placeholder="7" min="0" max="40">
-                </div>
+                  <div class="selection-form__section-group-item">
+                    <label class="selection-form__label" for="cat-age">Возраст (лет):</label>
+                    <input class="selection-form__text-input" id="cat-age" type="number" name="age" placeholder="7" min="0" max="40">
+                  </div>
+                </fieldset>
 
                 <fieldset class="selection-form__section selection-form__section--radio">
                   <legend class="visually-hidden">Выбор программы питания</legend>
@@ -86,22 +90,23 @@
                   <ul class="control control--radio list-reset">
                     <li class="control__item">
                       <input class="control__input control__input--radio" id="program-weigth-loss" type="radio" name="program-radio" value="weight-loss">
-                      <label class="control__label" for="program-weigth-loss"> похудение</label>
+                      <label class="control__label" for="program-weigth-loss">похудение</label>
                     </li>
                     <li class="control__item">
                       <input class="control__input control__input--radio" id="program-weigth-gain" type="radio" name="program-radio" value="weight-gain">
-                      <label class="control__label" for="program-weigth-gain"> Набор массы</label>
+                      <label class="control__label" for="program-weigth-gain">Набор массы</label>
                     </li>
                     <li class="control__item">
                       <input class="control__input control__input--radio" id="program-need-advice" type="radio" name="program-radio" value="need-advice">
-                      <label class="control__label" for="program-need-advice"> Не знаю (Нужен ваш совет)</label>
+                      <label class="control__label" for="program-need-advice">Не знаю (Нужен ваш совет)</label>
                     </li>
                   </ul>
                 </fieldset>
-              </fieldset>
+              </div>
 
-              <fieldset class="selection-form__section selection-form__section--accent">
+              <fieldset class="selection-form__section selection-form__section--contacts selection-form__section--accent">
                 <legend class="selection-form__section-legend">Контактные данные (владельца кота)</legend>
+                <!--<h3 class="selection-form__section-legend">Контактные данные (владельца кота)</h3>-->
 
                 <div class="selection-form__section-group-item">
                   <label class="selection-form__label" for="master-email">E-mail:<sup>*</sup> </label>
@@ -119,34 +124,34 @@
 
               </fieldset>
 
-              <fieldset class="selection-form__section selection-form__section--accent">
+              <fieldset class="selection-form__section selection-form__section--accent selection-form__section--comment">
                 <legend class="selection-form__section-legend">Комментарий</legend>
 
-                <div class="selection-form__section-group-item">
+                <div class="selection-form__section-group-item selection-form__section-group-item--comment">
                   <label class="visually-hidden" for="comment">Расскажите обо всех повАдках кота</label>
                   <textarea class="selection-form__text-input selection-form__text-input--comment" id="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
                 </div>
               </fieldset>
 
-              <fieldset class="selection-form__section selection-form__section--accent">
+              <fieldset class="selection-form__section selection-form__section--accent selection-form__section--more-info">
                 <legend class="selection-form__section-legend">Дополнительно</legend>
 
                 <ul class="control control--check list-reset">
                   <li class="control__item">
                     <input class="control__input control__input--check" id="more-sweetener" type="checkbox" name="more-comonents" value="sweetener">
-                    <label class="control__label" for="more-sweetener"> сахарозаменитель</label>
+                    <label class="control__label" for="more-sweetener">сахарозаменитель</label>
                   </li>
                   <li class="control__item">
                     <input class="control__input control__input--check" id="more-water" type="checkbox" name="more-comonents" value="water">
-                    <label class="control__label" for="more-water"> питьевая вода</label>
+                    <label class="control__label" for="more-water">питьевая вода</label>
                   </li>
                   <li class="control__item">
                     <input class="control__input control__input--check" id="more-milk" type="checkbox" name="more-comonents" value="milk">
-                    <label class="control__label" for="more-milk"> молоко</label>
+                    <label class="control__label" for="more-milk">молоко</label>
                   </li>
                   <li class="control__item">
                     <input class="control__input control__input--check" id="more-vitamins" type="checkbox" name="more-comonents" value="vitamins">
-                    <label class="control__label" for="more-vitamins"> витамины</label>
+                    <label class="control__label" for="more-vitamins">витамины</label>
                   </li>
                 </ul>
               </fieldset>
@@ -162,15 +167,15 @@
           </div>
         </section>
 
-        <section class="location location--home">
+        <section class="location">
           <h2 class="visually-hidden">Информация о местоположении</h2>
           <div class="location__wrapper">
-            <div class="location__desc-wrapper">
-              <p class="location__slogan">приглашаем <br>к сотрудничеству <br>дилеров!</p>
-              <p class="location__address">ул. Большая Конюшенная, д. 19/8 <br>
-                <span class="location__city">Санкт-Петербург</span>
-              </p>
-            </div>
+            <!--<div class="location__desc-wrapper">-->
+            <p class="location__slogan">приглашаем <br>к сотрудничеству <br>дилеров!</p>
+            <p class="location__address">ул. Большая Конюшенная, д. 19/8 <br>
+              <span class="location__city">Санкт-Петербург</span>
+            </p>
+            <!--</div>-->
           </div>
           <div class="location__map">
 
@@ -185,7 +190,7 @@
             </div>
 
             <div class="location__map-iframe">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1924.4234188532907!2d30.321339876767116!3d59.93969943766546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690780225174!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1924.4234188532907!2d30.321339876767116!3d59.93969943766546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690780225174!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
