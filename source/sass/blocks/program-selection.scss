@@ -1,0 +1,30 @@
+.program-selection {
+  width: 100%;
+  background-color: $base-background-color;
+  border-top: 1px solid $section-border-color;
+
+  color: $base-text-color;
+  font-family: $ff-Oswald;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.program-selection__wrapper {
+  //padding: 0 20px;
+}
+
+.program-selection__header {
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 20px 0 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.program-selection__slogan {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 37px 20px 0 20px;
+  margin: 0;
+}

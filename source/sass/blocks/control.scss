@@ -1,0 +1,34 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.control__item {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.control__input {
+  &--radio {
+    width: 30px;
+    height: 30px;
+  }
+
+  &--check {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.control__label {
+  margin: 0 0 0 15px;
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

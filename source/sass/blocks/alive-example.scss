@@ -1,0 +1,43 @@
+.alive-example {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $secondary-background-color;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.alive-example__text-wrapper {
+  width: 280px;
+  padding: 0 20px;
+  //background-color: $secondary-background-color;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.alive-example__header {
+  margin: 25px 0 0 0;
+  padding: 0;
+
+  color: $base-text-color;
+  font-family: $ff-Oswald;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.alive-example__text {
+  margin: 40px 0 0 0;
+  padding: 0;
+
+  color: $secondary-text-color;
+  font-family: $ff-Lato;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.alive-example__stats {
+  margin: 20px 0 0 0;
+}

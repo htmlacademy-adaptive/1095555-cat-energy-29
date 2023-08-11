@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <!--Подключить стили-->
-
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <!--****************-->
   </head>
   <body class="page__body">
@@ -16,23 +20,25 @@
           <div class="main-header__nav">
             <nav class="main-nav">
 
-              <a class="main-header__logo" href="index.html">
-                <picture>
-                  <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-                </picture>
-              </a>
-
-              <div class="main-header__text-logo">
-                <a class="header-text-logo" href="index.html">
+              <div class="main-nav__picture-wrapper">
+                <a class="main-nav__logo" href="index.html">
                   <picture>
-                    <img src="img/svg/footer-logo.svg" width="101" height="18" alt="CAT ENERGY">
+                    <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
                   </picture>
                 </a>
+
+                <div class="main-nav__text-logo">
+                  <a class="header-text-logo" href="index.html">
+                    <picture>
+                      <img src="img/svg/footer-logo.svg" width="101" height="18" alt="CAT ENERGY">
+                    </picture>
+                  </a>
+                </div>
+
+                <button class="main-nav__toogle" type="button" aria-label="Открыть/закрыть меню"></button>
               </div>
 
-              <button class="main-nav__toogle" type="button" aria-label="Открыть/закрыть меню"></button>
-
-              <div class="main-nav__wrapper">
+              <div class="main-nav__site-list-wrapper">
                 <ul class="main-nav__list site-list list-reset">
                   <li class="site-list__item site-list__item--current">
                     <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
@@ -51,14 +57,16 @@
 
           <section class="promo promo--home">
             <h2 class="visually-hidden">Промо материал</h2>
-            <div class="promo__wrapper">
+            <div class="promo__wrapper-content">
               <p class="promo__header">Функциональное питание для котов</p>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
               <div class="promo__picture">
                 <picture>
-                  <img src="img/promo-picture-mob@1x.jpeg" width="280" height="270" alt="Упаковка CAT ENERGY">
+                  <img src="img/promo-can-mobile@1x.png" width="280" height="270" alt="Упаковка CAT ENERGY">
                 </picture>
               </div>
+            </div>
+            <div class="promo__wrapper-action">
               <a class="promo__button button button--accent" href="form.html">
                 <span class="button__text">Подобрать программу</span>
               </a>
@@ -129,8 +137,8 @@
                 </div>
 
                 <div class="stats__item stats__item--total">
-                  <dt class="stats__index stats__index--total">15 000 РУБ.</dt>
-                  <dd class="stats__desc stats__desc--total">Затраты на питание:</dd>
+                  <dt class="stats__index stats__index--total">Затраты на питание:</dt>
+                  <dd class="stats__desc stats__desc--total">15 000 РУБ.</dd>
                 </div>
               </dl>
             </div>
@@ -157,13 +165,13 @@
 
         <section class="location location--home">
           <h2 class="visually-hidden">Информация о местоположении</h2>
-          <div class="location__wrapper">
-            <div class="location__desc-wrapper">
-              <p class="location__slogan">приглашаем <br>к сотрудничеству <br>дилеров!</p>
-              <p class="location__address">ул. Большая Конюшенная, д. 19/8 <br>
-                <span class="location__city">Санкт-Петербург</span>
-              </p>
-            </div>
+          <div class="location__wrapper location__wrapper--home">
+            <!--<div class="location__desc-wrapper">-->
+            <p class="location__slogan">приглашаем <br>к сотрудничеству <br>дилеров!</p>
+            <p class="location__address">ул. Большая Конюшенная, д. 19/8 <br>
+              <span class="location__city">Санкт-Петербург</span>
+            </p>
+            <!--</div>-->
           </div>
           <div class="location__map">
 
@@ -178,7 +186,7 @@
             </div>
 
             <div class="location__map-iframe">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1924.4234188532907!2d30.321339876767116!3d59.93969943766546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690780225174!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1924.4234188532907!2d30.321339876767116!3d59.93969943766546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690780225174!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
           </div>
