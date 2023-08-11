@@ -5,7 +5,6 @@
 }
 
 .stats__item {
-  display: block;
   position: relative;
   width: 124px;
   height: 56px;
@@ -41,10 +40,9 @@
 .stats__desc {
   margin: 0;
   position: absolute;
-  top:46px;
+  top: 46px;
   left: 22px;
   width: 80px;
-  text-align: center;
   background-color: $secondary-background-color;
 
   color: $secondary-text-color;

@@ -11,7 +11,7 @@
   justify-content: space-around;
   align-items: center;
 
-  &:before {
+  &::before {
     content: " ";
     display: block;
     width: 78px;

@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0 20px;
   background-image: url("../img/promo-background-mob@1x.png"),
-    linear-gradient(to right, #64A83D 50%, #63A63B 50%),
-    linear-gradient(#63A63B 100%, $base-background-color 60%);
+    linear-gradient(to right, #64a83d 50%, #63a63b 50%),
+    linear-gradient(#63a63b 100%, $base-background-color 60%);
   background-size: auto 64%;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -14,7 +14,6 @@
   font-family: $ff-Oswald;
   font-style: normal;
   font-weight: 400;
-
 }
 
 /*.promo__wrapper-content {
