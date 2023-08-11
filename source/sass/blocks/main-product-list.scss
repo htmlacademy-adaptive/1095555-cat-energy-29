@@ -11,8 +11,8 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "photo title"
-                       "photo description"
-                       "btn btn";
+                        "photo description"
+                        "btn btn";
   row-gap: 20px;
 }
 
