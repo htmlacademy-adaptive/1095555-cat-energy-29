@@ -5,6 +5,12 @@
   background-color: $secondary-background-color;
   font-style: normal;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    //background-color: $base-background-color;
+    background-image: linear-gradient($base-background-color 70%, $secondary-background-color 30%);
+    border-top: 1px solid $site-list-border-color;
+  }
 }
 
 .alive-example__text-wrapper {
@@ -16,6 +22,11 @@
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
 }
 
 .alive-example__header {
@@ -26,6 +37,12 @@
   font-family: $ff-Oswald;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .alive-example__text {
@@ -36,8 +53,24 @@
   font-family: $ff-Lato;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .alive-example__stats {
   margin: 20px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+  }
+}
+
+.alive-example__cat-slider {
+  @media (min-width: $tablet-width) {
+    margin-top: 250px;
+  }
 }

@@ -8,6 +8,12 @@
   width: 280px;
   padding: 0 20px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 45px 30px;
+    margin: 0 auto;
+  }
 }
 
 .how-it-work__header {
@@ -17,11 +23,23 @@
   font-family: $ff-Oswald;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-work__list {
   margin: 40px 0 40px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+  }
 }
 
 .how-it-work__item {
@@ -30,6 +48,14 @@
   align-items: center;
   justify-content: start;
   margin: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    min-height: 280px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 
   &--icon_healthy::before {
     content: " ";
@@ -42,6 +68,11 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--icon_fast-cook::before {
@@ -55,6 +86,11 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--icon_nutrious::before {
@@ -68,6 +104,11 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--icon_changes::before {
@@ -81,6 +122,11 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -92,4 +138,9 @@
   font-family: $ff-Lato;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

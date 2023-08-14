@@ -14,6 +14,14 @@
   font-family: $ff-Oswald;
   font-style: normal;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+    position: relative;
+    background-image: none;
+  }
 }
 
 /*.promo__wrapper-content {
@@ -35,6 +43,14 @@
   padding: 27px 0 0 0;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 90px 0 90px;
+    color: $base-text-color;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__slogan {
@@ -42,6 +58,16 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 25px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 40px 90px 0 90px;
+    color: $base-text-color;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
 }
 
 .promo__picture {
@@ -50,10 +76,30 @@
   width: 280px;
   height: 270px;
   margin: 29px auto 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 609px;
+    margin: 21px auto 0 auto;
+  }
+}
+
+.promo__picture-img {
+  @media (min-width: $tablet-width) {
+    content: url("../img/promo-can-tablet@1x.png");
+    width: 708px;
+    height: 609px;
+  }
 }
 
 .promo__wrapper-action {
   width: 280px;
   //padding: 0 20px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 295px;
+    left: 120px;
+  }
 }

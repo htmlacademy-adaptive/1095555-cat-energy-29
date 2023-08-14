@@ -9,4 +9,11 @@
   display: grid;
   grid-template-columns: 280px;
   grid-row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    grid-template-columns: 708px;
+    grid-row-gap: 30px;
+  }
 }

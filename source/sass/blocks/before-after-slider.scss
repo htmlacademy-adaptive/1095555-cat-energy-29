@@ -3,4 +3,23 @@
   padding: 0 20px;
   background-color: $secondary-background-color;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 100px 30px;
+    background-color: transparent;
+    margin: auto;
+  }
+}
+
+.before-after-slider__before-picture {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.before-after-slider__after-picture {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
