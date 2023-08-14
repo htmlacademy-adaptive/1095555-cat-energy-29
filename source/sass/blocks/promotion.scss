@@ -11,6 +11,13 @@
   justify-content: space-around;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/catalog/promotion-tablet@1x.jpeg");
+    width: 708px;
+    height: 200px;
+    flex-direction: row;
+  }
+
   &::before {
     content: " ";
     display: block;
@@ -20,6 +27,11 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 82px;
+    }
   }
 }
 
@@ -34,4 +46,8 @@
   font-family: $ff-Lato;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }

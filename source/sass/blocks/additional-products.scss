@@ -6,6 +6,10 @@
   font-family: $ff-Oswald;
   font-style: normal;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin: 93px 0 0 0;
+  }
 }
 
 .additional-products__wrapper {
@@ -13,6 +17,12 @@
   padding: 0 20px;
   margin: auto;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 
 .additional-products__title {
@@ -29,14 +39,33 @@
   //text-align: center;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 420px;
+    padding: 0 40px;
+    left: 30px;
+    top: -23px;
+  }
 }
 
 .additional-products__list {
   padding: 43px 0 35px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 92px 0 70px 0;
+  }
 }
 
 .additional-products__promotion {
   margin: 0 0 35px 0;
   width: 280px;
   height: 290px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 75px 0;
+    width: 708px;
+    height: 200px;
+  }
 }
