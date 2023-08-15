@@ -7,6 +7,10 @@
   font-family: $ff-Oswald;
   font-style: normal;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .program-selection__wrapper {
@@ -19,6 +23,12 @@
   padding: 27px 20px 0 20px;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 70px 0 70px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-selection__slogan {
@@ -27,4 +37,11 @@
   text-transform: uppercase;
   padding: 37px 20px 0 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 70px 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+  }
 }
