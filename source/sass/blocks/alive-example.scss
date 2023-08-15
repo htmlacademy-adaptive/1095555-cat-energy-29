@@ -11,6 +11,22 @@
     background-image: linear-gradient($base-background-color 70%, $secondary-background-color 30%);
     border-top: 1px solid $site-list-border-color;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    background-image: linear-gradient($base-background-color 25%, $secondary-background-color 25%);
+  }
+}
+
+.alive-example__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 55px 75px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .alive-example__text-wrapper {
@@ -26,6 +42,13 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    gap: 70px;
   }
 }
 
@@ -43,6 +66,11 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    height: 140px;
+  }
 }
 
 .alive-example__text {
@@ -59,6 +87,11 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 440px;
+  }
 }
 
 .alive-example__stats {
@@ -67,10 +100,20 @@
   @media (min-width: $tablet-width) {
     margin-top: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .alive-example__cat-slider {
   @media (min-width: $tablet-width) {
     margin-top: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //width: 440px;
+    padding: 0;
+    margin: 0;
   }
 }

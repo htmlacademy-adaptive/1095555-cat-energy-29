@@ -22,9 +22,19 @@
     border: none;
   }
 
+  @media (min-width: $desktop-width) {
+    background-color: inherit;
+  }
+
   &--current {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $accent-background-color;
+    }
+  }
+
+  &--current-home {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $base-background-color;
     }
   }
 }
@@ -52,5 +62,15 @@
     line-height: 24px;
     padding: 12px 0 10px 0;
     border-bottom: 2px solid $base-background-color;
+  }
+
+  &--home {
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 12px 0 10px 0;
+      border-bottom: 2px none;
+      color: $alternative-text-color;
+    }
   }
 }

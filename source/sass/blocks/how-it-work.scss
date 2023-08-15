@@ -14,6 +14,11 @@
     padding: 45px 30px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 55px 71px;
+  }
 }
 
 .how-it-work__header {
@@ -39,6 +44,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 95px;
   }
 }
 
