@@ -1,3 +1,14 @@
+.selection-form__dop-wrapper {
+  @media (min-width: $desktop-width) {
+    //width: 1220px;
+    padding: 66px 110px 0;
+    //margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .selection-form__section {
   text-decoration: none;
   border: none;
@@ -17,6 +28,10 @@
     @media (min-width: $tablet-width) {
       padding: 66px 70px 72px 70px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 
   &--radio {
@@ -30,6 +45,12 @@
       padding: 27px 23px;
       border: 1px solid $section-border-color;
     }
+
+    @media (min-width: $desktop-width) {
+      //padding: 0;
+      padding: 25px 28px;
+      margin: 0;
+    }
   }
 
   &--contacts {
@@ -39,6 +60,13 @@
     @media (min-width: $tablet-width) {
       padding: 89px 70px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 89px 110px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
   }
 
   &--comment {
@@ -47,6 +75,10 @@
     @media (min-width: $tablet-width) {
       padding: 99px 70px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 90px 110px 0;
+    }
   }
 
   &--more-info {
@@ -54,6 +86,10 @@
 
     @media (min-width: $tablet-width) {
       padding: 69px 70px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 69px 110px 0;
     }
   }
 
@@ -64,6 +100,11 @@
 
     @media (min-width: $tablet-width) {
       margin: 89px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      //padding: 0;
+      margin: 94px 0 0 0;
     }
   }
 }
@@ -170,5 +211,11 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     margin: 54px auto 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 55px;
+    margin: 61px auto 80px auto;
   }
 }

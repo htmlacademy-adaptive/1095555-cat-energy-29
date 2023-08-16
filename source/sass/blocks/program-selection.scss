@@ -29,6 +29,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 0;
+  }
 }
 
 .program-selection__slogan {
@@ -43,5 +47,9 @@
     font-size: 20px;
     line-height: 30px;
     width: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
   }
 }
