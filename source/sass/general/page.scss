@@ -26,3 +26,10 @@ $desktop-width: 1330px;
   margin: 0;
   padding: 0;
 }
+
+.page__body-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 2150px;
+  margin: 0 auto;
+}

@@ -24,20 +24,34 @@
   }
 
   @media (min-width: $desktop-width) {
+    //max-width: 2150px;
     width: auto;
-    //height: 550px;
     padding: 145px 55px 0;
-    margin: 0;
-    background-image: url("../img/promo-bckgr-desc@1x.png"),
-      linear-gradient(to right, $base-background-color 50%, #63a63b 50%);
+    //margin: 0 auto;
+    background-image: linear-gradient(to right, $base-background-color 50%, #63a63b 50%);
     background-size: contain;
-    background-position: right center;
+    background-position: 100% center;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title photo"
       "slogan photo"
       "btn photo";
+
+    &::before {
+      content: " ";
+      background-color: #3f3e43;
+      background-image: linear-gradient(to right, rgb(104, 183, 56, 85%), rgb(104, 183, 56, 85%)),
+        url("../img/promo-cat-desc@1x.png");
+      height: 100%;
+      width: 50%;
+      //background-size: cover;
+      background-position: 100% right;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 0;
+      right: 0;
+    }
   }
 }
 
@@ -120,6 +134,7 @@
     height: 499px;
     margin: 0;
     margin-left: -163px;
+    z-index: 2;
   }
 }
 
