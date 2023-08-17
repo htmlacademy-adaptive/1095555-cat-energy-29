@@ -2,6 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: flex-start;
+    column-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //width: 440px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .stats__item {
@@ -13,11 +25,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 158px;
+    height: 68px;
+  }
 
   &--total {
     margin-top: 10px;
     width: 100%;
     border: none;
+    flex-direction: row;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin-top: 0;
+      min-width: 174px;
+      flex-grow: 2;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      min-width: auto;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 60px;
+    }
   }
 }
 
@@ -30,10 +66,23 @@
   font-weight: 400;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   &--total {
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      //width: 50%;
+    }
   }
 }
 
@@ -41,7 +90,6 @@
   margin: 0;
   position: absolute;
   top: 46px;
-  left: 22px;
   width: 80px;
   background-color: $secondary-background-color;
 
@@ -49,9 +97,24 @@
   text-align: center;
   font-family: $ff-Lato;
   font-size: 12px;
+  line-height: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    max-width: 150px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 10px;
+    position: absolute;
+    top: 61px;
+    background-color: $base-background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $secondary-background-color;
+  }
 
   &--total {
     position: initial;
@@ -60,5 +123,16 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+      background-color: $base-background-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $secondary-background-color;
+    }
   }
 }
