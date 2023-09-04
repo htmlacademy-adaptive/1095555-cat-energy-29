@@ -1,0 +1,31 @@
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    .copyright__icon {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.copyright__text {
+  color: $secondary-text-color;
+  font-family: $ff-Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
