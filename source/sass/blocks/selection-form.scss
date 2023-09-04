@@ -152,7 +152,60 @@
 
 .selection-form__text-input-wrapper {
   display: flex;
+  align-items: center;
   width: 100%;
+  //border: 1px solid $text-input-border-color;
+  position: relative;
+
+  /*&:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }*/
+
+  &--email {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 45px;
+      height: 45px;
+      right: 0;
+      background-image: url("../img/svg/input-email.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        height: 52px;
+        width: 52px;
+      }
+    }
+  }
+
+  &--phone {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 45px;
+      height: 45px;
+      right: 0;
+      background-image: url("../img/svg/input-phone.svg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+
+      @media (min-width: $tablet-width) {
+        height: 52px;
+        width: 52px;
+      }
+    }
+  }
 }
 
 .selection-form__label {
@@ -169,6 +222,43 @@
   }
 }
 
+.selection-form__text-input-custom {
+  width: 100%;
+  height: 45px;
+
+  color: $secondary-text-color;
+  font-family: $ff-Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0  45px 0 15px;
+  //border: none;
+  border: 1px solid $text-input-border-color;
+
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 52px 0 20px;
+  }
+}
+
 .selection-form__text-input {
   width: 100%;
   height: 45px;
@@ -182,6 +272,29 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 0 15px;
+
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  /*&:invalid,
+  &:valid {
+    border: 2px solid #ff8282;
+  }
+
+  &:invalid:focus {
+    border: 2px solid #ff8282;
+  }*/
 
   @media (min-width: $tablet-width) {
     height: 52px;

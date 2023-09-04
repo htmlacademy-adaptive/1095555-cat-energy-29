@@ -6,6 +6,15 @@
   border: none;
   height: 24px;
   text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   picture {
     width: 100%;

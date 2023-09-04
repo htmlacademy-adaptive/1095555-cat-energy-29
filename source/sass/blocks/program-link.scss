@@ -1,6 +1,5 @@
 .program-link {
   text-decoration: none;
-  display: block;
   width: 240px;
   color: $base-text-color;
   font-family: $ff-Oswald;
@@ -12,6 +11,29 @@
   padding: 20px 0;
   border-top: 1px solid $section-border-color;
 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &:hover {
+    &::after {
+      content: " ";
+      display: inline-block;
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/svg/right-arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left 0 bottom 50%;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -22,10 +44,10 @@
     content: " ";
     display: inline-block;
     width: 32px;
-    height: 16px;
+    height: 10px;
     background-image: url("../img/svg/right-arrow.svg");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+    background-size: contain;
+    background-position: left -7px bottom 50%;
   }
 }

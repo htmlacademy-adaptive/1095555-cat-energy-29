@@ -55,6 +55,16 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    color: #00000099;
+  }
+
+  &:active {
+    color: #0000004d;
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
     height: auto;
@@ -78,6 +88,14 @@
       padding: 12px 0 10px 0;
       border-bottom: 2px none;
       color: $alternative-text-color;
+
+      &:hover {
+        color: #ffffff99;
+      }
+
+      &:active {
+        color: #ffffff4d;
+      }
     }
   }
 }

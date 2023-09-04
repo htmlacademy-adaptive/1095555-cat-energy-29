@@ -45,13 +45,52 @@
   }
 }
 
+.main-nav__logo {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__text-logo {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav__toogle {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: $base-background-color;
+  background-image: url("../img/svg/sendwich-vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 400ms;
+
+  &--open {
+    background-image: url("../img/svg/close-menu-vector.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -59,16 +98,23 @@
 
 .main-nav__site-list-wrapper {
   width: 100%;
+  position: absolute;
+  top: 66px;
+  left: 0;
+  z-index: 2;
+  display: none;
+
+  &--open {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 450px;
+    display: block;
+    position: static;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 500px;
   }
-  //position: absolute;
-  //top: 66px;
-  //left: 0;
-  //z-index: 2;
 }
