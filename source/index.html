@@ -23,6 +23,8 @@
               <div class="main-nav__picture-wrapper">
                 <a class="main-nav__logo" href="index.html">
                   <picture>
+                    <source media="(min-width: 1330px)" srcset="img/svg/header-logo-desktop.svg" width="202" height="59">
+                    <source media="(min-width: 768px)" srcset="img/svg/tablet-header-logo.svg" width="174" height="50">
                     <img src="img/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
                   </picture>
                 </a>
@@ -62,7 +64,9 @@
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
               <div class="promo__picture">
                 <picture>
-                  <img class="promo__picture-img" src="img/promo-can-mobile@1x.png" width="280" height="270" alt="Упаковка CAT ENERGY">
+                  <source media="(min-width: 1330px)" srcset="img/promo-can-desc@1x.png 1x, img/promo-can-desc@2x.png 2x" width="552" height="499">
+                  <source media="(min-width: 768px)" srcset="img/promo-can-tablet@1x.png 1x, img/promo-can-tablet@2x.png 2x" width="708" height="609">
+                  <img class="promo__picture-img" src="img/promo-can-mobile@1x.png" srcset="img/promo-can-mobile@2x.png" width="280" height="270" alt="Упаковка CAT ENERGY">
                 </picture>
               </div>
             <!--</div>-->
@@ -179,7 +183,9 @@
               <noscript>
                 <a class="location__map-image" href="#">
                   <picture>
-                    <img src="img/noscript-map-location@1x.jpeg" width="320" height="362" alt="Санкт-Петербург ул. Большая Конюшенная, д. 19/8">
+                    <source media="(min-width: 1330px)" srcset="img/noscript-map-location-desc@1x.jpg 1x, img/noscript-map-location-desc@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/noscript-map-location-tablet@1x.jpg 1x, img/noscript-map-location-tablet@2x.jpg 2x">
+                    <img src="img/noscript-map-location@1x.jpeg" srcset="img/noscript-map-location@2x.jpeg" width="320" height="362" alt="Санкт-Петербург ул. Большая Конюшенная, д. 19/8">
                   </picture>
                 </a>
               </noscript>
