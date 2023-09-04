@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  width: 132px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__link {
+  text-decoration: none;
+  display: flex;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    .social__icon {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+}
