@@ -1,30 +1,97 @@
 .before-after-slider {
   width: 280px;
+  height: 256px;
   padding: 0 20px;
   background-color: $secondary-background-color;
-  margin: auto;
+  margin: 20px auto 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 100px 30px;
+    width: 560px;
+    height: 512px;
+    //padding: 100px 30px;
     background-color: transparent;
-    margin: auto;
+    padding: 0;
+    margin: 99px auto 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    //width: 100%;
     padding: 0;
+    margin: 0;
   }
 }
 
 .before-after-slider__before-picture {
+  background-image: url("../img/before-slide-mob@1x.png");
+  height: 256px;
+  background-repeat: no-repeat;
+  background-position: top left 20px;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 50%;
+  z-index: 2;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/before-slide-mob@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
-    text-align: center;
+    background-image: url("../img/before-slide-desc@1x.png");
+    background-position: top left;
+    height: 512px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/before-slide-desc@2x.png");
+    }
   }
 }
 
 .before-after-slider__after-picture {
-  @media (min-width: $tablet-width) {
-    text-align: center;
+  background-image: url("../img/after-slide-mob@1x.png");
+  height: 256px;
+  background-repeat: no-repeat;
+  background-position: top right 20px;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0;
+
+  width: 50%;
+  z-index: 1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/after-slide-mob@2x.png");
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/after-slide-desc@1x.png");
+    background-position: top right;
+    height: 512px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/after-slide-desc@2x.png");
+    }
+  }
+}
+
+.before-after-slider__drag-picture {
+  width: 40px;
+  height: 256px;
+  position: absolute;
+  //top: calc(50% - 15px);
+  left: calc(50% - 20px);
+  cursor: pointer;
+  z-index: 3;
+  background-image: url("../img/svg/drag-slider.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/svg/drag-slider-desc.svg");
+    height: 512px;
+  }
+
 }

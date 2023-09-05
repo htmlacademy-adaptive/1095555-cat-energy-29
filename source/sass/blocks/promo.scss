@@ -9,6 +9,12 @@
   background-position: center 0;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background-mob@2x.png"),
+      linear-gradient(to right, #64a83d 50%, #63a63b 50%),
+      linear-gradient(#63a63b 100%, $base-background-color 60%);
+  }
+
   color: $alternative-text-color;
   text-align: center;
   font-family: $ff-Oswald;
@@ -45,12 +51,18 @@
         url("../img/promo-cat-desc@1x.png");
       height: 100%;
       width: 50%;
-      //background-size: cover;
+      background-size: cover;
       background-position: 100% right;
       background-repeat: no-repeat;
       position: absolute;
       z-index: 0;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgb(104, 183, 56, 85%), rgb(104, 183, 56, 85%)),
+          url("../img/promo-cat-desc@2x.png");
+        background-position: 100% right;
+      }
     }
   }
 }
