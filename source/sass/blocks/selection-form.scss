@@ -154,57 +154,36 @@
   display: flex;
   align-items: center;
   width: 100%;
-  //border: 1px solid $text-input-border-color;
+  border: 1px solid $text-input-border-color;
   position: relative;
+}
 
-  /*&:hover {
-    border: 1px solid #cdcdcd;
+.selection-form__text-input-icon {
+  position: absolute;
+  display: block;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  //mask-image: url("../img/stack.svg#input-phone");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
   }
 
-  &:active {
-    border: 2px solid #444444;
+  @media (min-width: $desktop-width) {
+    right: 16px;
   }
-
-  &:focus {
-    border: 2px solid #444444;
-  }*/
 
   &--email {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 45px;
-      height: 45px;
-      right: 0;
-      background-image: url("../img/svg/input-email.svg");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: center;
-
-      @media (min-width: $tablet-width) {
-        height: 52px;
-        width: 52px;
-      }
-    }
+    mask-image: url("../img/stack.svg#input-email");
   }
 
   &--phone {
-    &::after {
-      position: absolute;
-      content: "";
-      width: 45px;
-      height: 45px;
-      right: 0;
-      background-image: url("../img/svg/input-phone.svg");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: center;
-
-      @media (min-width: $tablet-width) {
-        height: 52px;
-        width: 52px;
-      }
-    }
+    mask-image: url("../img/stack.svg#input-phone");
   }
 }
 
@@ -249,6 +228,10 @@
 
   &:focus {
     border: 2px solid #444444;
+
+    & ~ .selection-form__text-input-icon {
+      background-color: $accent-background-color;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -287,15 +270,6 @@
     border: 2px solid #444444;
   }
 
-  /*&:invalid,
-  &:valid {
-    border: 2px solid #ff8282;
-  }
-
-  &:invalid:focus {
-    border: 2px solid #ff8282;
-  }*/
-
   @media (min-width: $tablet-width) {
     height: 52px;
     font-size: 20px;
@@ -314,6 +288,15 @@
       line-height: 30px;
       padding: 11px 20px;
     }
+  }
+}
+
+// for input errors
+.input-errors {
+  border: 2px solid #ff8282;
+
+  & ~ .selection-form__text-input-icon {
+    background-color: #ff8282;
   }
 }
 
