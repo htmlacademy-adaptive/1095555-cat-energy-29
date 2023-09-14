@@ -15,8 +15,8 @@ $section-border-color: #d9d9d9;
 $text-input-border-color: #e7e7e7;
 $product-border-colr: #ebebeb;
 
-$ff-Oswald: "Oswald", "Roboto", sans-serif;
-$ff-Lato: "Lato", "Roboto", sans-serif;
+$ff-Oswald: "Oswald", "Arial", sans-serif;
+$ff-Lato: "Lato", "Arial", sans-serif;
 
 $tablet-width: 768px;
 $desktop-width: 1330px;
@@ -30,6 +30,6 @@ $desktop-width: 1330px;
 .page__body-wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 2150px;
+  max-width: 3300px;
   margin: 0 auto;
 }

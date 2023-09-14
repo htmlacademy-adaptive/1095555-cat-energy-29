@@ -34,9 +34,9 @@
     width: auto;
     padding: 145px 55px 0;
     //margin: 0 auto;
-    background-image: linear-gradient(to right, $base-background-color 50%, #63a63b 50%);
+    background-image: linear-gradient(to right, $base-background-color 50%, #62a63b 50%);
     background-size: contain;
-    background-position: 100% center;
+    background-position: center 100%;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,16 +52,16 @@
       height: 100%;
       width: 50%;
       background-size: cover;
-      background-position: 100% right;
+      background-position: right 100% center;
       background-repeat: no-repeat;
       position: absolute;
       z-index: 0;
-      right: 0;
+      right: 0px;
 
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgb(104, 183, 56, 85%), rgb(104, 183, 56, 85%)),
           url("../img/promo-cat-desc@2x.png");
-        background-position: 100% right;
+        background-position: right 100% center;
       }
     }
   }
@@ -82,13 +82,16 @@
 }*/
 
 .promo__header {
-  margin: 0;
+  margin: 0 auto;
   padding: 27px 0 0 0;
   font-size: 36px;
   line-height: 36px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 90px 0 90px;
+    margin: 0;
+    max-width: 100%;
+    padding: 62px 90px 0 90px;
     color: $base-text-color;
     text-align: left;
     font-size: 60px;
@@ -100,6 +103,7 @@
     padding: 0;
     width: 420px;
     margin: 80px auto 0;
+    padding-left: 26px;
   }
 }
 
@@ -124,6 +128,7 @@
     padding: 0;
     width: 420px;
     margin: 40px auto 0;
+    padding-left: 26px;
   }
 }
 
@@ -132,7 +137,7 @@
   display: block;
   width: 280px;
   height: 270px;
-  margin: 29px auto 0 auto;
+  margin: 31px auto 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -144,8 +149,7 @@
     grid-area: photo;
     width: 552px;
     height: 499px;
-    margin: 0;
-    margin-left: -163px;
+    margin: 0 0 49px -163px;
     z-index: 2;
   }
 }
@@ -171,20 +175,28 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 295px;
+    top: 291px;
     left: 120px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: btn;
     width: 420px;
-    top: 52px;
+    top: 50px;
     left: 0;
     right: 0;
+    padding-left: 25px;
   }
 }
 
 .promo__button {
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    height: 54px;
+
+    font-size: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
     height: 54px;

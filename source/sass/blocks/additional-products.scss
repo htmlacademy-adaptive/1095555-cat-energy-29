@@ -1,5 +1,5 @@
 .additional-products {
-  margin: 40px 0 0 0;
+  margin: 38px 0 0 0;
   width: 100%;
   border-top: 2px solid $accent-background-color;
 
@@ -8,11 +8,11 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin: 93px 0 0 0;
+    margin: 91px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 101px 0 0 0;
+    margin: 98px 0 0 0;
   }
 }
 
@@ -32,8 +32,8 @@
     width: 1220px;
     padding: 0 55px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 81px;
+    grid-template-columns: 4fr 1fr;
+    gap: 80px;
     justify-content: center;
     align-items: center;
   }
@@ -69,14 +69,14 @@
 }
 
 .additional-products__list {
-  padding: 43px 0 35px 0;
+  padding: 43px 0 37px 0;
 
   @media (min-width: $tablet-width) {
     padding: 92px 0 70px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 91px 0 81px;
+    padding: 91px 0 84px;
   }
 }
 

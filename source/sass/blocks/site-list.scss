@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 0 5px 0 0;
     justify-content: flex-end;
     align-items: center;
     gap: 33px;
@@ -70,7 +71,7 @@
     height: auto;
     font-size: 18px;
     line-height: 24px;
-    padding: 12px 0 10px 0;
+    padding: 7px 0;
     border-bottom: 2px solid $base-background-color;
 
     @media (min-width: $desktop-width) {
