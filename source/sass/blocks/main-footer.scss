@@ -11,6 +11,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -44,7 +45,10 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     padding: 0;
+    left: 0;
+    right: 0;
   }
 }
 

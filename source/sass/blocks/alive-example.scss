@@ -6,7 +6,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    //background-color: $base-background-color;
+    background-color: $base-background-color;
     background-image: linear-gradient($base-background-color 57%, $secondary-background-color 43%);
     border-top: 1px solid $site-list-border-color;
   }
@@ -30,14 +30,13 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 100px;
   }
 }
 
 .alive-example__text-wrapper {
   width: 280px;
   padding: 0 20px;
-  //background-color: $secondary-background-color;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -53,7 +52,7 @@
     width: 100%;
     padding: 0;
     height: 100%;
-    gap: 70px;
+    gap: 65px;
   }
 }
 
@@ -117,7 +116,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //width: 440px;
     padding: 0;
     margin: 0;
   }

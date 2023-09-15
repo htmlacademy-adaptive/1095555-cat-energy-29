@@ -18,13 +18,12 @@
 
   @media (min-width: $tablet-width) {
     width: 245px;
-    padding: 70px 38px 40px 38px;
+    padding: 50px 38px 40px 38px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
-    //padding: 70px 38px 40px 38px;
   }
 
   &::before {
@@ -34,7 +33,7 @@
     width: 30px;
     height: 30px;
     background-color: $base-background-color;
-    background-image: url("../img/svg/show-all-icon(+).svg");
+    background-image: url("../img/stack.svg#show-all-icon(+)");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

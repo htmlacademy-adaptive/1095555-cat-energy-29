@@ -1,9 +1,5 @@
 .catalog {
-  //padding: 0 20px;
-  //width: 280px;
-  //margin: 0 auto;
   width: 100%;
-
   color: $base-text-color;
   font-family: $ff-Oswald;
   font-style: normal;
@@ -33,13 +29,13 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 65px 0 84px 0;
+    padding: 60px 0 95px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 74px 0 84px 0;
+    padding: 74px 0 93px;
   }
 }
 

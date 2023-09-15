@@ -13,10 +13,6 @@
   }
 }
 
-.program-selection__wrapper {
-  //padding: 0 20px;
-}
-
 .program-selection__header {
   font-size: 36px;
   line-height: 36px;
@@ -25,7 +21,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 70px 0 70px;
+    padding: 62px 70px 0 70px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -43,7 +39,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 70px 0 70px;
+    padding: 53px 70px 0 70px;
     font-size: 20px;
     line-height: 30px;
     width: 330px;
