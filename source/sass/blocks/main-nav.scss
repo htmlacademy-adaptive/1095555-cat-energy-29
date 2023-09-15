@@ -80,7 +80,6 @@
   height: 24px;
   border: none;
   background-color: $base-background-color;
-  //background-image: url("../img/svg/sendwich-vector.svg");
   background-image: url("../img/stack.svg#sendwich-vector");
   background-repeat: no-repeat;
   background-size: contain;
@@ -88,7 +87,6 @@
   transition-duration: 400ms;
 
   &--open {
-    //background-image: url("../img/svg/close-menu-vector.svg");
     background-image: url("../img/stack.svg#close-menu-vector");
     background-repeat: no-repeat;
     background-size: contain;
@@ -109,6 +107,11 @@
   display: none;
 
   &--open {
+    display: block;
+  }
+
+  &--no-js {
+    position: static;
     display: block;
   }
 

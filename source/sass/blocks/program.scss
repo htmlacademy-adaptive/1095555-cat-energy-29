@@ -8,7 +8,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  //gap: 20px;
   position: relative;
 
   &--slim {
@@ -34,13 +33,11 @@
         left: auto;
         right: 63px;
         top: 1px;
-
       }
 
       @media (min-width: $desktop-width) {
         width: 100px;
         height: 106px;
-        //margin-left: 0;
         right: auto;
         left: 52px;
         top: 41px;
@@ -66,7 +63,6 @@
         grid-area: icon;
         width: 268px;
         height: 200px;
-        //margin-left: 15px;
         left: auto;
         right: 27px;
         top: 15px;
@@ -75,7 +71,6 @@
       @media (min-width: $desktop-width) {
         width: 134px;
         height: 100px;
-        //margin-left: -15px;
         right: auto;
         left: 35px;
         top: 47px;

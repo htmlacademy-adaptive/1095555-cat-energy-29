@@ -1,8 +1,6 @@
 .selection-form__dop-wrapper {
   @media (min-width: $desktop-width) {
-    //width: 1220px;
     padding: 66px 110px 0;
-    //margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -55,15 +53,15 @@
   }
 
   &--contacts {
-    padding: 35px 20px 0 0;
+    padding: 69px 20px 0 0;
     //position: relative;
 
     @media (min-width: $tablet-width) {
-      padding: 74px 70px 0;
+      padding: 88px 70px 0;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 76px 110px 0;
+      padding: 89px 110px 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 80px;
@@ -71,41 +69,39 @@
   }
 
   &--comment {
-    padding: 36px 20px 0 0;
+    padding: 45px 20px 0 0;
 
     @media (min-width: $tablet-width) {
-      padding: 85px 70px 0;
+      padding: 99px 70px 0;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 77px 110px 4px;
+      padding: 89px 110px 6px;
     }
   }
 
   &--more-info {
-    padding: 33px 20px 0 0;
+    padding: 37px 20px 0 0;
 
     @media (min-width: $tablet-width) {
-      padding: 58px 70px 0;
+      padding: 68px 70px 0;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 57px 110px 0;
+      padding: 69px 110px 0;
     }
   }
 
   &--accent {
     border-top: 2px solid $accent-background-color;
-    margin: 25px 0 0 20px;
-    //margin: 0 0 0 20px;
+    margin: 42px 0 0 20px;
 
     @media (min-width: $tablet-width) {
-      margin: 66px 0 0 0;
+      margin: 87px 0 0 0;
     }
 
     @media (min-width: $desktop-width) {
-      //padding: 0;
-      margin: 68px 0 0 0;
+      margin: 89px 0 0 0;
     }
   }
 }
@@ -115,7 +111,10 @@
   max-width: 187px;
   margin: 0;
   padding: 0 20px 0 0;
-  //position: absolute;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  background-color: #ffffff;
 
 
   font-size: 24px;
@@ -123,10 +122,16 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    margin-left: -40px;
     padding: 0 40px;
     font-size: 36px;
     line-height: 36px;
+
+    top: -24px;
+    left: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 69px;
   }
 }
 
@@ -166,7 +171,6 @@
   right: 12px;
   width: 20px;
   height: 20px;
-  //mask-image: url("../img/stack.svg#input-phone");
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: auto;
@@ -216,7 +220,6 @@
   line-height: 18px;
   text-transform: uppercase;
   padding: 0  45px 0 15px;
-  //border: none;
   border: 1px solid $text-input-border-color;
 
   outline: none;
@@ -294,7 +297,6 @@
   }
 }
 
-// for input errors
 .input-errors {
   border: 2px solid #ff8282;
 
