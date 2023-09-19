@@ -1,0 +1,45 @@
+.selection {
+  padding: 25px 0 13px;
+  font-family: $ff-Oswald;
+  border-top: 1px solid $section-border-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 51px 0;
+  }
+}
+
+.selection__wrapper {
+  @media (min-width: $tablet-width) and (max-width: 1219px) {
+    padding: 16px 70px;
+  }
+}
+
+.selection__header {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.selection__slogan {
+  max-width: 270px;
+  margin: 0;
+
+  color: $base-text-color;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 380px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

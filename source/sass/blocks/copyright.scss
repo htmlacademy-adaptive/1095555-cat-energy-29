@@ -1,15 +1,16 @@
-.copyright__link {
-  text-decoration: none;
+.copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: $secondary-text-color;
+  text-decoration: none;
 
-  &:hover {
-    .copyright__icon {
-      fill: #68b738;
-    }
+  &:hover,
+  &:focus {
+    outline: none;
+
+    fill: #68b738;
   }
 
   &:active {
@@ -18,14 +19,8 @@
 
   @media (min-width: $tablet-width) {
     gap: 23px;
-  }
-}
+    width: fit-content;
 
-.copyright__text {
-  color: $secondary-text-color;
-  font-family: $ff-Lato;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+    justify-self: end;
+  }
 }
