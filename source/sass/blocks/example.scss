@@ -1,0 +1,75 @@
+.example {
+  padding: 27px 0 40px;
+
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 102px;
+
+    background-color: $base-background-color;
+    background-image: linear-gradient(
+      $base-background-color 57%,
+      $secondary-background-color 43%
+    );
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
+
+    background-image: linear-gradient(
+      $base-background-color 22.5%,
+      $secondary-background-color 22.5%
+    );
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    gap: 10px 220px;
+    align-items: start;
+  }
+}
+
+.example__text-wrapper {
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.example__header {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 145px;
+  }
+}
+
+.example__text {
+  margin: 0 0 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+  }
+}

@@ -3,99 +3,72 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 0 5px 0 0;
+    gap: 33px;
     justify-content: flex-end;
     align-items: center;
-    gap: 33px;
   }
 }
 
 .site-list__item {
-  min-width: 320px;
-  height: 66px;
-  background-color: $base-background-color;
   border-top: 1px solid $site-list-border-color;
 
   @media (min-width: $tablet-width) {
-    min-width: 0;
-    height: auto;
     border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: inherit;
-  }
-
-  &--current {
-    @media (min-width: $tablet-width) {
-      border-bottom: 2px solid $accent-background-color;
-    }
-  }
-
-  &--current-home {
-    @media (min-width: $desktop-width) {
-      border-bottom: 2px solid $base-background-color;
-    }
   }
 }
 
 .site-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 66px;
+  display: block;
+  padding: 23px 20px 22px;
+
+  font-size: 20px;
+  font-family: $ff-Oswald;
+  text-align: center;
+  color: $base-text-color;
+  text-transform: uppercase;
   text-decoration: none;
 
-  color: $base-text-color;
-  font-family: $ff-Oswald;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-  &:hover {
-    color: #00000099;
-  }
-
-  &:active {
-    color: #0000004d;
-  }
-
   @media (min-width: $tablet-width) {
-    width: auto;
-    height: auto;
+    padding: 10px 0 8px;
+
     font-size: 18px;
     line-height: 24px;
-    padding: 7px 0;
-    border-bottom: 2px solid $base-background-color;
 
-    @media (min-width: $desktop-width) {
-      font-size: 20px;
-      line-height: 24px;
-      padding: 12px 0 10px 0;
-      border-bottom: 2px none;
+    border-bottom: 2px solid transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 6px 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      border-color: $accent-background-color;
     }
   }
 
-  &--home {
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list--home .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $alternative-text-color;
+  }
+
+  &--current {
     @media (min-width: $desktop-width) {
-      font-size: 20px;
-      line-height: 24px;
-      padding: 12px 0 10px 0;
-      border-bottom: 2px none;
-      color: $alternative-text-color;
-
-      &:hover {
-        color: #ffffff99;
-      }
-
-      &:active {
-        color: #ffffff4d;
-      }
+      border-color: currentColor;
     }
   }
 }

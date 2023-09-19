@@ -1,0 +1,119 @@
+.about {
+  padding: 20px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 58px;
+
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0 83px;
+
+    border: none;
+  }
+}
+
+.about__header {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.about__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 89px 60px;
+
+    counter-reset: item;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
+.about__item {
+  position: relative;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding: 2px 0 2px 80px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 111px 75px 45px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(item);
+      position: absolute;
+      top: 0;
+      left: 116px;
+      z-index: -1;
+
+      margin: 0;
+
+      font-size: 280px;
+      line-height: 202px;
+      font-family: $ff-Oswald;
+      color: #f2f2f2;
+
+      counter-increment: item;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--healthy::before {
+    background-image: url("../img/sprite.svg#healthy-icon");
+  }
+
+  &--cook::before {
+    background-image: url("../img/sprite.svg#fast-cook-icon");
+  }
+
+  &--nutrious::before {
+    background-image: url("../img/sprite.svg#nutrious-icon");
+  }
+
+  &--changes::before {
+    background-image: url("../img/sprite.svg#changes-icon");
+  }
+}

@@ -9,9 +9,10 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
+//import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import { stacksvg } from 'gulp-stacksvg';
 
 // Styles
 export const styles = () => {
@@ -27,21 +28,21 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-// html
+// HTML
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({collapceWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 
-// scripts
+// Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
 }
 
-// images
+// Images
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,jpeg,png}')
     .pipe(squoosh())
@@ -53,7 +54,7 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-// webp
+// Webp
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,jpeg,png}')
     .pipe(squoosh({
@@ -62,21 +63,28 @@ const createWebp = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-//svg
+// Svg
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/sprite.svg', '!source/img/stack.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/sprite/**/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
-//copy
+// Sprite
+export const sprite = () => {
+  return gulp.src('source/img/sprite/**/*.svg')
+    .pipe(svgo())
+    .pipe(stacksvg())
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+};
+
+// Copy
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
-    'source/*.webmanifest',
-    'source/img/sprite.svg',
-    'source/img/stack.svg'
+    'source/*.webmanifest'
   ], {
     base: 'source'
   })
@@ -84,13 +92,12 @@ const copy = (done) => {
   done();
 }
 
-//clean
+// Clean
 const clean = () => {
   return del('build');
 }
 
 // Server
-
 const server = (done) => {
   browser.init({
     server: {
@@ -110,14 +117,13 @@ const reload = (done) => {
 }
 
 // Watcher
-
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts))
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
-//build
+// Build
 export const build = gulp.series(
   clean,
   copy,
@@ -127,6 +133,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    sprite,
     createWebp
   )
 );
@@ -140,6 +147,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    sprite,
     createWebp
   ),
   gulp.series(

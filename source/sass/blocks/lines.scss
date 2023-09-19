@@ -1,0 +1,66 @@
+.lines {
+  position: relative;
+
+  margin: 0 -20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $ff-Oswald;
+  color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 -30px;
+    padding-left: 30px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -102px 0 -110px;
+    padding-left: 70px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+
+    vertical-align: middle;
+
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+  }
+
+  &::before {
+    display: none;
+    margin-left: -100%;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+  }
+
+  &::after {
+    margin-right: -100%;
+  }
+}
+
+.lines span {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+  }
+}
