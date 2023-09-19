@@ -1,4 +1,4 @@
-const navToogle = document.querySelector(".main-nav__toogle");
+const navToogle = document.querySelector('.main-nav__toogle');
 const nav = document.querySelector('.main-nav');
 
 // Убираем сразу с body класс no-js
